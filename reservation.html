@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation - Queen Restaurant</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+  <header>
+    <div class="branding-container">
+      <div class="logo">
+        <img src="image/logo.jpg" alt="Restaurant Logo">
+      </div>
+      <div class="branding">
+        <h1 class="name">Queen</h1>
+        <p class="slogan">Where every flavor tells a story!</p>
+      </div>
+    </div>
+    <nav class="nav-bar">
+      <ul>
+        <li><a class="nav-link" href="index.html">Home</a></li>
+        <li><a class="nav-link" href="about.html">About</a></li>
+        <li><a class="nav-link" href="menu.html">Menu</a></li>
+        <li><a class="nav-link" href="reservation.html">Reservation</a></li>
+        <li><a class="nav-link" href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container" id="demo">
+    <section id="reservation" class="reservation">
+      <h2>Make a Reservation</h2>
+      <form>
+        <div class="row">
+          <div class="col-md-6">
+            <div class="form-group">
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" required class="form-element">
+            </div>
+            <div class="form-group">
+              <label for="time">Time:</label>
+              <input type="time" id="time" name="time" required class="form-element">
+            </div>
+            <div class="form-group">
+              <label for="persons">Number of Persons:</label>
+              <input type="number" id="persons" name="persons" required class="form-element">
+            </div>
+          </div>
+            <div class="col-12">
+              <div class="form-group">
+                <label for="special-requests">Special Requests:</label>
+                <textarea id="special-requests" name="special-requests" class="form-element"></textarea>
+              </div>
+            </div>
+          </div>
+        <button type="submit" class="btn btn-primary">Make a Reservation</button>
+      </form>
+    </section>
+  </div>
+  <footer>
+    <p>&copy; 2024 Queen Restaurant!. All rights reserved.</p>
+  </footer>
+</body>
+</html>
